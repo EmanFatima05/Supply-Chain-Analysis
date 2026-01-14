@@ -214,7 +214,12 @@ FROM dbo.Supply_chain
 
 SELECT *
 FROM DuplicateCheck
-WHERE rn > 1;/*Checking for Min Max of each columns*/SELECT
+WHERE rn > 1;
+
+
+-- Checking for Min Max of each columns
+
+SELECT
 	MIN(Price) AS MinPrice,
 	MAX(Price) AS MaxPrice,
 	MIN(Shipping_Costs) AS MinShippingCost,
@@ -322,31 +327,44 @@ group by Supplier_Name
 order by sum(Supplier_Lead_Time) asc
 
 Select distinct Supplier_Name
-from Supply_chain-- Average Shipping Time by Carrier
+from Supply_chain
+
+
+-- Average Shipping Time by Carrier
 select
 	Shipping_Carriers ,
 	avg(Shipping_Times * 1.0) as [average shipping time by each carrier]
 from Supply_chain
-group by Shipping_Carriers-- Comparison of Shipping Costs Across Transport Modes
+group by Shipping_Carriers
+
+-- Comparison of Shipping Costs Across Transport Modes
 
 select
 	Transportation_Modes ,
 	avg(Shipping_Costs) as [average cost / transportation mode]
 from Supply_chain
-group by Transportation_Modes--Route Efficiency (Time / Cost)
+group by Transportation_Modes
+
+--Route Efficiency (Time / Cost)
 
 select
 	Routes ,
 	avg((Shipping_Times)/(Shipping_Costs)) as [route effeciency]
 from Supply_chain
-group by routes-- Carrier Performance (Time vs Cost):
+group by routes
+
+-- Carrier Performance (Time vs Cost):
 select 
 	Shipping_carriers ,
 	cast(avg(Shipping_times) as decimal(10,2)) as AVG_Shiptime,
 	Cast (avg(Shipping_costs)as decimal(10,2) ) as	AVG_Shipcost
 from Supply_chain
-group by Shipping_carriers--Manufactor
--- manufactur lead time cost production volumeSELECT
+group by Shipping_carriers
+
+--Manufactor
+-- manufactur lead time cost production volume
+
+SELECT
 CASE
 	WHEN Manufacturing_Lead_Time BETWEEN 1 AND 5 THEN '1-5'
 	WHEN Manufacturing_Lead_Time BETWEEN 6 AND 10 THEN '6-10'
@@ -370,7 +388,10 @@ CASE
 	WHEN Manufacturing_Lead_Time BETWEEN 21 AND 25 THEN '21-25'
 	WHEN Manufacturing_Lead_Time BETWEEN 26 AND 30 THEN '26-30'
 	ELSE 'Above 30'
-END--Defect Rate vs Production Volume
+END
+
+
+--Defect Rate vs Production Volume
 SELECT
 CASE
 	WHEN Production_Volumes BETWEEN 100 AND 250 THEN '100�250'
@@ -392,7 +413,9 @@ CASE
 	ELSE 'Above 1000'
 END
 ORDER BY
-MIN(Production_Volumes);--Sales by Customer Gender
+MIN(Production_Volumes);
+
+--Sales by Customer Gender
 
 SELECT
 	Customer_Gender,
@@ -400,14 +423,20 @@ SELECT
 	ROUND((SUM(Revenue_generated) * 100.0 / SUM(SUM(Revenue_generated)) OVER ()),2) AS [Percentage of Total (%)]
 FROM Supply_chain
 GROUP BY Customer_Gender
-ORDER BY [Sales per Gender] DESC;SELECT
+ORDER BY [Sales per Gender] DESC;
+
+SELECT
 	Supplier_name,
 	ROUND(AVG([Stock_out_risk]), 2) *100 AS Avg_Stockout_Risk,
 	ROUND(AVG(Supplier_Lead_time), 2)AS Avg_Supplier_Lead_Time
 FROM Supply_chain
 GROUP BY Supplier_name
 ORDER BY
-Avg_Stockout_Risk DESC;Select * from Supply_chain--Manufacturing Lead Time / Production Volume
+Avg_Stockout_Risk DESC;
+
+Select * from Supply_chain
+
+--Manufacturing Lead Time / Production Volume
 
 select top 15
 	Sku ,
@@ -424,7 +453,11 @@ select
 	sum(Manufacturing_Costs) AS [manufacturing cost] ,
 	sum(Shipping_Costs) as [shipping cost]
 from Supply_chain
-group by Product_Type-- time breakdownSELECT
+group by Product_Type
+
+-- time breakdown
+
+SELECT
 -- Percentage contribution of Customer Lead Time
 (
 	(SUM(Supplier_Lead_Time) * 100.0) / (SUM(Customer_Lead_Time) + SUM(Manufacturing_Lead_Time) + SUM(Shipping_Times))
@@ -438,4 +471,5 @@ group by Product_Type-- time breakdownSELECT
 	(SUM(Shipping_Times) * 100.0) / (SUM(Customer_Lead_Time) + SUM(Manufacturing_Lead_Time) + SUM(Shipping_Times))
 ) AS [Shipping Time %]
 FROM Supply_chain
+
 
