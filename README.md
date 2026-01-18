@@ -167,6 +167,9 @@ The Power BI dashboard presents:
 📸 **Power BI Overview**
 
 
+<img width="1584" height="829" alt="Screenshot 2026-01-14 190603" src="https://github.com/user-attachments/assets/65755b17-5fb6-45b9-a9af-e65fbb066ca5" />
+
+
 ---
 
 ## 🔗 End-to-End Workflow
