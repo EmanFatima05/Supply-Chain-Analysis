@@ -1,7 +1,7 @@
 
 # 📦 Supply Chain Analytics Project
 
-**(Python + SQL Server + Power BI)**
+**(SQL Server + Power BI)**
 
 ---
 
@@ -177,8 +177,6 @@ The Power BI dashboard presents:
 ```
 CSV Data
    ↓
-Python (Cleaning + EDA + Insights)
-   ↓
 SQL Server (Modeling + Constraints + Analytics)
    ↓
 Power BI (Dashboards & KPIs)
@@ -188,7 +186,7 @@ Power BI (Dashboards & KPIs)
 
 ## 🚀 Key Outcomes
 
-* Unified **Python → SQL → Power BI analytics pipeline**
+* Unified **SQL → Power BI analytics pipeline**
 * Strong focus on **business-driven KPIs**
 * Production-ready SQL with constraints & calculated metrics
 * Portfolio-grade dashboards for stakeholders
@@ -198,7 +196,7 @@ Power BI (Dashboards & KPIs)
 ## 👩‍💻 Author
 
 **Fatima Iman**
-Data Analyst | Python • SQL • Power BI • Supply Chain Analytics
+Data Analyst | • SQL • Power BI • Supply Chain Analytics
 
 📌 *Built as a portfolio project demonstrating real-world analytics workflows.*
 
