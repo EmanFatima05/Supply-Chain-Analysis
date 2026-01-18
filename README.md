@@ -27,18 +27,6 @@ The project focuses on:
 * **Visualization**: Power BI
 * **Data Source**: CSV (`supply_chain_data.csv`)
 
----
-
-## 🐍 Python Analysis (Data Cleaning & EDA)
-
-### 🔹 Purpose of Python Stage
-
-Python was used as the **first layer of analysis** to:
-
-* Understand raw data behavior
-* Clean and validate the dataset
-* Perform exploratory and quantitative analysis
-* Prepare structured data for SQL ingestion
 
 ---
 
@@ -50,27 +38,6 @@ Key cleaning steps performed:
 * Ensured correct data types for numeric & categorical fields
 * Checked for duplicate records
 * Validated ranges for prices, costs, stock, and defect rates
-
----
-
-### 📊 Exploratory Data Analysis (EDA)
-
-Python EDA focused on:
-
-* Distribution of prices, costs, and stock levels
-* Revenue and profit patterns
-* Defect rate trends
-* Supplier and transportation mode comparisons
----
-
-### 📈 Quantitative Insights (Python)
-
-* Identified early **profitability trends**
-* Highlighted **high-defect suppliers**
-* Detected **inventory imbalance risks**
-* Supported metric definitions later used in SQL & Power BI
-
-> Python acted as the **analytical foundation**, while SQL handled **scalability, constraints, and production-level analysis**.
 
 ---
 
