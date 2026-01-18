@@ -136,6 +136,15 @@ The Power BI dashboard presents:
 
 <img width="1584" height="829" alt="Screenshot 2026-01-14 190603" src="https://github.com/user-attachments/assets/65755b17-5fb6-45b9-a9af-e65fbb066ca5" />
 
+<img width="1536" height="815" alt="Screenshot 2026-01-15 024934" src="https://github.com/user-attachments/assets/473fdd2c-b755-4d63-af49-97d3efe6ef27" />
+
+<img width="1536" height="818" alt="Screenshot 2026-01-15 025019" src="https://github.com/user-attachments/assets/7d3e4d87-42bc-44f0-84a5-52853580137e" />
+
+<img width="1545" height="816" alt="Screenshot 2026-01-15 025057" src="https://github.com/user-attachments/assets/470e6cb0-6585-4f92-9dd7-37461846f475" />
+
+<img width="1539" height="818" alt="Screenshot 2026-01-15 025135" src="https://github.com/user-attachments/assets/ee0aef18-99c8-4feb-b110-72ebbd36050f" />
+
+<img width="1544" height="810" alt="Screenshot 2026-01-15 025154" src="https://github.com/user-attachments/assets/a58057b2-cca7-447c-ad2e-366881500b26" />
 
 ---
 
