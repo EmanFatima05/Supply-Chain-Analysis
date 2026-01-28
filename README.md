@@ -184,7 +184,5 @@ Power BI (Dashboards & KPIs)
 **Fatima Iman**
 Data Analyst | • SQL • Power BI • Supply Chain Analytics
 
-📌 *Built as a portfolio project demonstrating real-world analytics workflows.*
-
 ---
 
