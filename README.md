@@ -1,11 +1,11 @@
 
-# 📦 Supply Chain Analytics Project
+#  Supply Chain Analytics Project
 
 **(SQL Server + Power BI)**
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is an **end-to-end supply chain analytics solution** built using **Python for data preprocessing & exploratory analysis**, **SQL Server for data modeling, validation, and advanced analytics**, and **Power BI for visualization and reporting**.
 
@@ -19,7 +19,7 @@ The project focuses on:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Python**: Pandas, NumPy, Matplotlib/Seaborn (EDA & preprocessing)
 * **Database**: Microsoft SQL Server
@@ -30,7 +30,7 @@ The project focuses on:
 
 ---
 
-### 🧹 Data Cleaning (Python)
+###  Data Cleaning (Python)
 
 Key cleaning steps performed:
 
@@ -41,7 +41,7 @@ Key cleaning steps performed:
 
 ---
 
-## 🧱 Database Design (SQL Server)
+##  Database Design (SQL Server)
 
 ### 📄 Database & Table Creation
 
@@ -50,35 +50,35 @@ Key cleaning steps performed:
 
 ---
 
-## 📥 Data Ingestion
+##  Data Ingestion
 
 Data imported from CSV using `BULK INSERT` for performance and scalability.
 
 ---
 
-## 🔄 SQL Data Transformation
+##  SQL Data Transformation
 
-### ✏️ Column Standardization
+###  Column Standardization
 
 * Renamed columns for clarity and consistency
 * Unified naming conventions across Python, SQL, and Power BI
 
-### 🔢 Data Type Optimization
+###  Data Type Optimization
 
 * Converted monetary fields from `FLOAT` → `DECIMAL`
 * Improved precision and reporting accuracy
 
 ---
 
-## 🧮 Derived Metrics (SQL)
+##  Derived Metrics (SQL)
 
-### 💰 Financial Metrics
+###  Financial Metrics
 
 * **Profit**
 * **Warehousing Cost**
 * **Total Cost Validation**
 
-### ⚠️ Risk & Quality Metrics
+###  Risk & Quality Metrics
 
 * **Stock-out Risk Index**
 * **Defective Units**
@@ -86,7 +86,7 @@ Data imported from CSV using `BULK INSERT` for performance and scalability.
 
 ---
 
-## 🔍 Data Quality & Validation
+##  Data Quality & Validation
 
 * Null checks across all critical columns
 * Duplicate detection using `ROW_NUMBER()`
@@ -94,9 +94,9 @@ Data imported from CSV using `BULK INSERT` for performance and scalability.
 
 ---
 
-## 📊 Business Analysis (SQL)
+##  Business Analysis (SQL)
 
-### 💵 Financial Performance
+###  Financial Performance
 
 * Top 5 most profitable SKUs
 * Revenue by product category
@@ -104,7 +104,7 @@ Data imported from CSV using `BULK INSERT` for performance and scalability.
 
 ---
 
-### 🚚 Logistics & Transportation
+###  Logistics & Transportation
 
 * Average shipping time by carrier
 * Cost comparison across transportation modes
@@ -170,7 +170,7 @@ Power BI (Dashboards & KPIs)
 
 ---
 
-## 🚀 Key Outcomes
+##  Key Outcomes
 
 * Unified **SQL → Power BI analytics pipeline**
 * Strong focus on **business-driven KPIs**
@@ -179,9 +179,9 @@ Power BI (Dashboards & KPIs)
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
-**Fatima Iman**
+**Eman Fatima**
 Data Analyst | • SQL • Power BI • Supply Chain Analytics
 
 ---
